@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build dev image
+        run: docker build -f .devcontainer/Dockerfile -t local/dev:latest .
+      - name: Run tests in the same image
+        run: |
+          docker run --rm -v "$PWD":/workspaces/project -w /workspaces/project local/dev:latest make test
