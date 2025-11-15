@@ -1,4 +1,12 @@
 # esp32_car
 Small car using esp32 
 
-Once docker container is created run the following: sudo apt-get update && sudo apt-get install -y python3 python3-venv python3-pip
+
+Sample Development Workflow:
+1. Activate docker container
+
+Sample Upload Workflow
+1. Ensure to be outside of docker container
+2. Update `platformio_override.ini` with expected serial port
+3. Create venv and install `pip install platformio`
+4. Upload to device: `pio run -t upload`
