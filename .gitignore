@@ -5,6 +5,12 @@ __pycache__/
 .env
 .DS_Store
 venv
+.vscode
+.pio
+platformio_override.ini
+
 
 # Devcontainer build artifacts
 *.log
+
+
