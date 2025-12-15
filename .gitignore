@@ -8,7 +8,7 @@ venv
 .vscode
 .pio
 platformio_override.ini
-
+platformio.ini
 
 # Devcontainer build artifacts
 *.log

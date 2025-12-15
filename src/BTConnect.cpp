@@ -20,9 +20,9 @@ void Parse_BLE_Tx(){
         Serial.println(rxload);;    
         if (rxload.equals("led_on")){
             Serial.println("LED on");
-            digitalWrite(LED,LOW);
-        } else if (rxload.equals("led_off")){
             digitalWrite(LED,HIGH);
+        } else if (rxload.equals("led_off")){
+            digitalWrite(LED,LOW);
         }
         rxload="";
     }
