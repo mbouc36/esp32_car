@@ -3,3 +3,4 @@
 
 bool obstalce_detected(void);
 void obstacle_response(void);
+void automated_setup(void);
